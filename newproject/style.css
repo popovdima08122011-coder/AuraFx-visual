@@ -1,0 +1,164 @@
+
+
+
+body {
+    background:url("src/img/R.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Fredoka', sans-serif;
+}
+.box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10px;
+        top: 20px;
+        right: 20px;
+
+        width: 300px;
+        padding: 25px;
+
+        /* Glass background */
+        background: rgba(145, 80, 255, 0.12);
+
+        /* Glass blur */
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+
+        /* Glass border */
+        border: 1px solid rgba(255, 255, 255, 0.2);
+
+        border-radius: 40px;
+
+        /* Purple glow */
+        box-shadow:
+                0 8px 32px rgba(0, 0, 0, 0.25),
+                0 0 25px rgba(145, 80, 255, 0.2);
+
+        color: white;
+        z-index: 9999;
+}
+
+
+
+.holder{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.main{
+
+}
+
+.img{
+    width: 20px;
+}
+
+
+ .Home{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.nav-item:hover {
+    color: #d6b5ff;
+    transform: translateY(-3px);
+}
+
+.icon {
+    font-size: 35px;
+}
+
+
+
+
+.p {
+    position: relative;
+    text-decoration: none;
+    color: white;
+}
+
+/* Линия */
+.p::after {
+    content: "";
+    position: absolute;
+
+    left: 0;
+    bottom: -8px;
+
+    width: 0;
+    height: 2px;
+
+    background: white;
+    border-radius: 10px;
+
+    transition: width 0.3s ease;
+}
+
+/* При наведении */
+.p:hover::after {
+    width: 100%;
+}
+
+.p{
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+
+.h1{
+ font-size: 60px;
+    align-items: center;
+}
+
+.logo-holder{
+    display: flex;
+    justify-content: center;
+}
+
+
+.div-img{
+    display: inline-block;
+    perspective: 1000px;
+}
+
+.image-main {
+    width: 300px;
+    border-radius: 25px;
+
+    transition: transform 0.3s ease;
+    transform: rotateX(0deg) rotateY(0deg);
+}
+
+
+.logo-holder{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.img-partfolio {
+    filter: grayscale(100%);
+    transform: scale(1);
+
+    transition: all 0.4s ease;
+}
+
+.img-partfolio:hover {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}
+
